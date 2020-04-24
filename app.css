@@ -1,25 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+html,
+body {
+    font-family: 'Comic Neue', cursive;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: #eee;
+    display: grid;
+    place-items: center;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.2" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+        #c52754;
+    background-size: 10px, 100%;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
 .img2 {
     position: absolute;
     top: 0%;
 }
 
 .inf-content {
-    border: 1px solid #DDDDDD;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
 }
 
-.custom-search-form {
-    width: 80% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+.form-control,
+.btn {
+    padding: 16px !important;
+    height: 50px;
+}
+
+.bubble {
+    max-width: 500px;
+    background: #eee;
+    margin: 2rem auto;
+    padding: 0.2rem 1.25rem;
+    text-align: center;
+    font-family: "Dekko", cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    background-size: 12px, 100%;
+    border: 0.4rem solid #000;
+    box-shadow: 10px 0 0 3px #000;
+    position: relative;
 }
 
 
 
+.heading {
+    padding: 2rem 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
 .wrapper {
     margin: 0 auto;
+    padding: 4rem 0;
+
+}
+
+.img-thumbnail {
+    display: block;
+    margin: 1rem auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.loader {
+    border: 16px solid #f1f1f1;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 30px;
+    height: 30px;
+    margin: 3rem auto;
+    -webkit-animation: spin 1s linear infinite;
+    /* Safari */
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.inf-content {
+    -webkit-box-shadow: -1px 3px 20px 0px rgba(197, 39, 84, 0.39);
+    -moz-box-shadow: -1px 3px 20px 0px rgba(197, 39, 84, 0.39);
+    box-shadow: -1px 3px 20px 0px rgba(197, 39, 84, 0.39);
 }
